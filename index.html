@@ -9,20 +9,27 @@
   <title>Document</title>
 </head>
 
-<body>
+<body onload="loadPage('about')">
   <!-- Retro ads -->
   <img id="ad">
 
   <!-- Contents -->
   <h1>Welcome to Milan's World Wide Web information page!</h1>
-  <h2>Where are we going this <span id="day"></span>?</h2>
+  <h2>Where are we going this <span id="day">day</span>?</h2>
 
   <div class="flex flex-row gap-2">
-    <button>About</button>
-    <button>Projects</button>
-    <button>Contact</button>
+    <button onclick="loadPage('about')">About</button>
+    <button onclick="loadPage('projects')">Projects</button>
+    <button onclick="loadPage('contact')">Contact</button>
   </div>
 
+  <hr>
+
+  <div class="content">
+    <div class="innerpage">
+
+    </div>
+  </div>
 
 
 

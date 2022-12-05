@@ -52,9 +52,22 @@ button.disabled,button:disabled{
     cursor: default;
     background-color: silver;
     border-style: outset;
-    border-color: buttonface;
     border-right-color: #424242;
     border-bottom-color: #424242;
     color: grey;
     text-shadow: 1px 1px #fff;
+}
+
+.content {
+    min-height: 500px;
+}
+
+.innerpage {
+    transition: 4s cubic-bezier(0,-0.78,1,1.67)!important;
+    overflow: hidden;
+    max-height: 0px;
+}
+
+.innerpage.loaded {
+    max-height: 500px;
 }
